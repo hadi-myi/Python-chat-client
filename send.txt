@@ -1,0 +1,30 @@
+elif message.lower().startswith(".download"):
+    requested_filename = message.split(" ")[1]
+    with open(f"client_files/downloaded_{requested_filename}", 'wb') as file:
+        try:
+            print(f"Requesting {requested_filename}...")
+            client.send_message(message.encode())
+
+            # Receive file size information from the server
+            file_size = int(client.receive_message().decode())
+            print(f"Receiving {requested_filename} of size {file_size} bytes...")
+
+            received_size = 0
+            while received_size < file_size:
+                file_data = client.receive_message()
+                received_size += len(file_data)
+                
+                if file_data.endswith(b"<END>"):
+                    file.write(file_data[:-len(b"<END>")])
+                    print(f"File {requested_filename} downloaded successfully.")
+                    break
+                else:
+                    file.write(file_data)
+                
+                if received_size >= file_size:
+                    print("Done Receiving")
+                    client.send_message('File received successfully.'.encode())
+                    break
+
+        except Exception as e:
+            print(f"Error receiving file: {e}")

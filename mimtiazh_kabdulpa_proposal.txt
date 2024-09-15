@@ -1,0 +1,82 @@
+﻿Project Proposal: Secure Chat Client 
+
+
+Introduction
+
+
+The aim of this project is to develop a secure chat client. We want to implement some key features, including authentication, open chat rooms, user groups, direct messaging, file transfer, and encryption. It will involve creating a custom protocol to allow communication between the server and clients. Additionally, we will explore advanced networking vulnerabilities as stretch goals.
+
+
+Statement of the Problem
+So far in Computer Networking class, we have learned quite a bit and our understanding of how networks we use daily without putting much thought into it has greatly increased. Our goal is to put our knowledge into practice by developing a secure chat client. 
+
+
+Our project focuses on various networking concepts, encompassing protocol design, security protocols, custom protocol development, packet structures, server security, privacy and threat considerations, and error handling. To develop a network protocol, we will work with TCP, UDP, and create our own communication protocol to ensure reliable data transfer. Security protocols are important, with authentication and end-to-end encryption playing a central role in safeguarding user access and data. Custom protocol development will facilitate efficient data transfer, while understanding packet structures is crucial for reliable data transmission. As part of stretch goals, we will simulate server attacks to assess server security and address privacy vulnerabilities and potential threats like man-in-the-middle attacks, further enhancing our understanding of network security. These interconnected networking concepts will be applied to develop a secure chat client, offering practical experience and insights into real-world network applications
+Expected Outcomes
+
+
+Goals
+
+
+1. Authentication System: Implement a secure login system to validate user identities and protect against unauthorized access.
+2. Open Chat Rooms: Develop a platform for users to engage in group discussions on various topics of interest.
+3. Separate Groups: Users can create and join private groups for specific discussions or projects.
+4. Direct Messaging: Enable private conversations between two users.
+5. File Transfer: Incorporate a mechanism for users to exchange files securely within the application.
+6. Encryption: Implement end-to-end encryption to safeguard messages and files from unauthorized access.
+
+
+Stretch Goals
+
+
+1. Demonstrate Privacy Shortcomings: identify potential privacy vulnerabilities and propose countermeasures.
+2. Malicious Server Vulnerability: Simulate an attack scenario where the server is compromised, and devise strategies to mitigate risks.
+3. Man-in-the-middle attacks: Explore the potential for man-in-the-middle attacks and develop mechanisms to detect and prevent them.
+
+
+Plan of Attack
+
+
+Methodology
+
+
+1. System Design and Architecture: Define the overall structure of the chat client, emphasizing security protocols.
+2. Authentication Implementation: Develop an authentication system using hashing algorithms.
+3. Chat Room Functionality: Create an intuitive interface for open chat rooms and private group discussions.
+4. Direct Messaging Feature: Implement a messaging system between two users.
+5. File Transfer and Encryption: Integrate secure protocols with end-to-end encryption.
+6. Testing and Quality Assurance: Rigorous testing to ensure functionality, security, and performance.
+
+
+Milestones
+
+
+- Week 1: Implement a client and server that can send and receive simple messages
+- Week 2: Implement chat room and direct messaging etc
+- Week 3: Implement user authentication and file transfer 
+- Week 4: Implement encryption
+- Week 5: Work on stretch goals
+- Week 6: Testing phase[a]
+
+
+Division of Labor
+
+
+- Hadi: Handling Client-server, direct messaging, user authentication
+- Khumoyun: Handling Server, Chat Room Functionality, encryption and File Transfer
+
+
+Resources Needed
+
+
+- Programming languages (e.g., Python, Java)
+- Secure hashing libraries (e.g., bcrypt)
+- Networking libraries for protocol development
+- Encryption libraries (e.g., OpenSSL)
+- RealPython.com has introduction to socket programming that could be useful
+
+
+
+
+[a]@mimtiazh@iwu.edu we need to include custom protocol
+_Assigned to Hadi Imtiaz Hadi_
