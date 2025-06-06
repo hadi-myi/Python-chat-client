@@ -45,8 +45,7 @@ Requirements
 How to Run
 Server
 
-    Ensure the users.txt file exists with usernames and passwords.
-
+    Ensure the users.txt file exists.
     Create a folder named server_files in the same directory.
 
     Run the server:
