@@ -56,15 +56,7 @@ Milestones
 - Week 3: Implement user authentication and file transfer 
 - Week 4: Implement encryption
 - Week 5: Work on stretch goals
-- Week 6: Testing phase[a]
-
-
-Division of Labor
-
-
-- Hadi: Handling Client-server, direct messaging, user authentication
-- Khumoyun: Handling Server, Chat Room Functionality, encryption and File Transfer
-
+- Week 6: Testing phase
 
 Resources Needed
 
@@ -74,9 +66,3 @@ Resources Needed
 - Networking libraries for protocol development
 - Encryption libraries (e.g., OpenSSL)
 - RealPython.com has introduction to socket programming that could be useful
-
-
-
-
-[a]@mimtiazh@iwu.edu we need to include custom protocol
-_Assigned to Hadi Imtiaz Hadi_
