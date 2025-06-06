@@ -38,7 +38,7 @@ Files and Structure
 
 Requirements
 
-    Python 3.x
+    Python 3
 
     rsa library (pip install rsa)
 
